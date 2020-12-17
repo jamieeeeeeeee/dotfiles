@@ -11,6 +11,7 @@
 
 ## Bash
 
+This is just a straight copy of bashstrap on github. 
 6. `stow -t ~ bash`
 
 ## Gitconfig
