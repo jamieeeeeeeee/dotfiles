@@ -5,7 +5,7 @@
 3. `cd dotfiles`
 4. `rm README.md` since this is not a file we need to symlink
 
-## VIM
+## Vim
 
 5. `stow -t ~ vim` to stow the vim files
 
