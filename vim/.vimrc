@@ -1,9 +1,8 @@
-" Jamie Kent's vim config <3
+" Jamie Kent's vim config <3 
 
 
 " Softtabs, 4 spaces
 set tabstop=4
-set visualbell
 set shiftwidth=4
 set softtabstop=4
 set autoindent
@@ -14,12 +13,15 @@ set number
 set ruler
 set visualbell
 set showcmd " Display possible commands when typing
-set guifont=Menlo:h14
+
 syntax on
+
+set wildmenu " Make tab completion for files work
+set wildmode=list:full " Show a list when pressing tab and complete
 
 " Remap keys
 
-" Remap caps lock to esc key since the esc key is too far away.
+" Remap j and then k to esc key since the esc key is too far away.
 inoremap jk <ESC> 
 
 " Arrows are unvimlike 
@@ -35,10 +37,15 @@ inoremap <right> <nop>
 " Spellcheck
 set spell spelllang=en_us
 
+" Encoding
+set termencoding=utf-8
+set encoding=utf-8
+
 " Theme
 " To download this color scheme, Put srcery.vim in ~/.vim/colors/ (on unix-like systems)
 " Source: https://github.com/srcery-colors/srcery-vim
 colorscheme srcery 
 
 " Search
-set hlsearch 
+set hlsearch " Highlight search terms 
+set incsearch " Show search matches as you type
