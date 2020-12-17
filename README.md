@@ -13,6 +13,10 @@
 
 6. `stow -t ~ bash`
 
+## Gitconfig
+
+7. `stow -t ~ gitconfig`
+
 
 NOTE: To check files are correctly simlinked, run `ls -la` in `~`. 
 The output should look like this:
