@@ -8,6 +8,8 @@
 ## Vim
 
 5. `stow -t ~ vim` to stow the vim files
+6. Run `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim` to get Vundle working. Stow cannot clone directories (so it cannot stow /bundle/Vundle.vim). We need to manually add Vundle and then we can use Vundle to add everything else.
+7. Open vim and run `:PluginInstall` to install all plugins in .vimrc
 
 ## Bash
 
